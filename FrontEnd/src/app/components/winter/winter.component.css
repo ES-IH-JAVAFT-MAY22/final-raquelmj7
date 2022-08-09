@@ -1,0 +1,45 @@
+.winter{
+    font: sans-serif;
+}
+
+.games-component {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 300px;
+    height:auto;
+    margin: 20px;
+    padding-top: 30px;
+    border: 1px solid black;
+    transition: all;
+    transition-duration: 300ms;
+    border-radius: 15%;
+    
+    background-color: rgb(101, 255, 234);
+}
+
+
+.game_filter{
+    text-align: left;
+    min-height: 100px;
+    width:280px;
+    word-wrap: break-word;
+    margin-right: 45px;
+}
+  
+.games-component:hover {
+    background-color: rgb(230, 163, 255);
+}
+  
+.games_image {
+    height: 200px;
+    align-self: center;
+}
+  
+.games_name{
+    font-size: 20px;
+    margin: 5px;
+}

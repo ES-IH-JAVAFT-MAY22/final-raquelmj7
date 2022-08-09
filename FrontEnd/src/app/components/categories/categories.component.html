@@ -1,0 +1,113 @@
+<div class="container">
+    
+    <div class="btnallgames" > <img src="https://pbs.twimg.com/profile_images/535808712162566144/FUjktX4E_400x400.png" height ="220" width="210" /><p class="text" >Todos los juegos</p>  <!--Boton de Todos los juegos-->
+    
+        <!--Boton de Todos los juegos-->
+        <button type="button" routerLink="/games" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow1 ? {'background-color': color1, 'color': backgroundColor1, 'padding': padding1, 'border-radius': border1, 'border-color': bordercolor1, 'font-size': font1, 'font-weight': fontw1}:{'background-color': backgroundColor1, 
+        'color': color1, 'padding': padding1, 'border-radius': border1, 'border-color': bordercolor1, 'font-size': font1, 'font-weight': fontw1}" (mouseover)="shadow1=true" (mouseleave)="shadow1=false"> ¡Vamos!</button>
+
+    </div>
+
+    <div class="btn" ><img src="https://i.pinimg.com/originals/49/2b/a4/492ba46b8d72eb5c26343fa0c9864250.png" height ="220" width="210"/><p class="text" >Por estación</p>
+   
+        <!--Boton de Juegos de Invierno-->
+        <button type="button" routerLink="/games/seasons/winter" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow2 ? {'background-color': color2, 'color': backgroundColor2, 'padding': padding2, 'border-radius': border2, 'border-color': bordercolor2}:{'background-color': backgroundColor2, 
+        'color': color2, 'padding': padding2, 'border-radius': border2, 'border-color': bordercolor2}" (mouseover)="shadow2=true" (mouseleave)="shadow2=false"> Invierno</button>
+
+        <!--Boton de Juegos de Primavera-->
+        <button type="button" routerLink="/games/seasons/spring" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow3 ? {'background-color': color3, 'color': backgroundColor3, 'padding': padding3, 'border-radius': border3, 'border-color': bordercolor3}:{'background-color': backgroundColor3, 
+        'color': color3, 'padding': padding3, 'border-radius': border3, 'border-color': bordercolor3}" (mouseover)="shadow3=true" (mouseleave)="shadow3=false"> Primavera </button>
+
+        <!--Boton de Juegos de Verano-->
+        <button type="button" routerLink="/games/seasons/summer" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow4 ? {'background-color': color4, 'color': backgroundColor4, 'padding': padding4, 'border-radius': border4, 'border-color': bordercolor4}:{'background-color': backgroundColor4, 
+        'color': color4, 'padding': padding4, 'border-radius': border4, 'border-color': bordercolor4}" (mouseover)="shadow4=true" (mouseleave)="shadow4=false"> Verano </button>
+
+        <!--Boton de Juegos de Otoño-->
+        <button type="button" routerLink="/games/seasons/fall" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow5 ? {'background-color': color5, 'color': backgroundColor5, 'padding': padding5, 'border-radius': border5, 'border-color': bordercolor5}:{'background-color': backgroundColor5, 
+        'color': color5, 'padding': padding5, 'border-radius': border5, 'border-color': bordercolor5}" (mouseover)="shadow5=true" (mouseleave)="shadow5=false"> Otoño </button>
+    </div>
+
+    <a class="btn"><img src="https://utopiainfantil.files.wordpress.com/2011/07/ronda.jpg" height ="220" width="210" /><p class="text" >Por tipo</p>
+        
+        <!--Boton de Juegos cognitivos-->
+        <button type="button" routerLink="/games/types/creative" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow6 ? {'background-color': color6, 'color': backgroundColor6, 'padding': padding6, 'border-radius': border6, 'border-color': bordercolor6}:{'background-color': backgroundColor6, 
+        'color': color6, 'padding': padding6, 'border-radius': border6, 'border-color': bordercolor6}" (mouseover)="shadow6=true" (mouseleave)="shadow6=false"> Creativos </button>
+    
+        <!--Boton de Juegos educativos-->
+        <button type="button" routerLink="/games/types/cognitive" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow7 ? {'background-color': color7, 'color': backgroundColor7, 'padding': padding7, 'border-radius': border7, 'border-color': bordercolor7}:{'background-color': backgroundColor7, 
+        'color': color7, 'padding': padding7, 'border-radius': border7, 'border-color': bordercolor7}" (mouseover)="shadow7=true" (mouseleave)="shadow7=false"> Cognitivos </button>
+    
+        <!--Boton de Juegos de entretenimiento-->
+        <button type="button" routerLink="/games/types/entertainment" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow8 ? {'background-color': color8, 'color': backgroundColor8, 'padding': padding8, 'border-radius': border8, 'border-color': bordercolor8}:{'background-color': backgroundColor8, 
+        'color': color8, 'padding': padding8, 'border-radius': border8, 'border-color': bordercolor8}" (mouseover)="shadow8=true" (mouseleave)="shadow8=false"> Entretenimiento </button>
+    
+        <!--Boton de Juegos psicomotores-->
+        <button type="button" routerLink="/games/types/psychomotor" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow9 ? {'background-color': color9, 'color': backgroundColor9, 'padding': padding9, 'border-radius': border9, 'border-color': bordercolor9}:{'background-color': backgroundColor9, 
+        'color': color9, 'padding': padding9, 'border-radius': border9, 'border-color': bordercolor9}" (mouseover)="shadow9=true" (mouseleave)="shadow9=false"> Psicomotriz </button>
+    </a>
+</div>
+
+<!-- juegos-->
+<div class="container">
+    <a class="pruebajuego"><p class="text" >Las abejas ciegas</p><img src="https://static.vecteezy.com/system/resources/previews/001/203/858/original/bee-png.png" height ="220" width="210" />
+       
+        <p class="text"> Estación: Primavera</p>
+        
+        <p class="text"> Tipo: Entretenimiento</p>
+
+        <p class="text"> ¿Cómo se juega?</p><p class="description">En primavera las abejas salen a recolectar el polen de las flores para crear su riquísima miel. En este juego 
+            el polen será el objeto que elijan nuestros compis de juego. La abeja (un jugador) es ciega y está buscando el polen, el jugador que será 
+            la abeja ciega abandona la habitación. Los demás eligen un objeto cualquiera: cuadro, silla, mesa, jarrón... Ese objeto será el polen que 
+            la abeja ciega tiene que recolectar. Cuando el jugador vuelve, a medida que se acerca al objeto (polen) el resto de jugadores imitan el sonido 
+            del zumbido de una abeja. Si se acerca, el zumbido es más fuerte. Si se aleja, el sonido disminuye. Si el jugador no logra descubrir el objeto 
+            en 5 minutos o elige uno que no es, ha perdido</p>
+    
+ 
+    </a>
+
+    <a class="pruebajuego"><p class="text" >¿Cuál pesa más?</p><img src="https://st4.depositphotos.com/27811286/30200/v/380/depositphotos_302005094-stock-illustration-happy-kid-drink-milk-vector.jpg?forcejpeg=true" height ="220" width="210" />
+       
+        <p class="text"> Estación: Verano</p>
+        
+        <p class="text"> Tipo: Psicomotor</p>
+
+        <p class="text"> ¿Cómo se juega?</p><p class="description">Necsitamos 5 vasos iguales, agua y un pañuelo grande.
+            A uno de los jugadores se le cubren los ojos con un pañuelo. Los demás participantes llenan los cinco vasos 
+            con diferentes cantidades de agua, procurando que uno de ellos contenga una cantidad de líquido notablemente 
+            mayor al resto. Luego el jugador vendado debe ir cogiendo uno a uno los vasos y, dependiendo de su peso, adivinar 
+            cual está más lleno. Pero ojo, ¡solo se puede levantar una vez cada vaso! Si pierde, le echarán los vasos de agua 
+            en la cabeza y, si acierta, se lo echarán los demás jugadores.
+        </p>
+    
+ 
+    </a>
+
+    <a class="pruebajuego"><p class="text" >Muñecas de otoño</p><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PEA8PDw8PDw8PFQ8PDw8PDw8PDw8PFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4vFx8zODctNygtLisBCgoKDg0OGxAQGy0eHyUtLystKzAtLSswLystMis3NTUtLS0tLS0rKzctLy4rMzcuLS0tLS0tLS0tLS0tLTctLf/AABEIAQwAvAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIDBQYHBAj/xAA+EAACAQIDBAYGCAQHAAAAAAAAAQIDEQQSIQUGMUETIlFhcYEHFCMykbFCUmKCocHR4SRy8PEVFlNjkrPD/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAECAwQFBv/EACkRAQACAgAEBQMFAAAAAAAAAAABAgMRBBIhMQUTQVFhkaHRFCJxgfH/2gAMAwEAAhEDEQA/AOnpDSHYAEMAAYAAAMQwAAHYBAMAFYBgAgGIBWGkAwBILDQwFYRJiYEQGAFbvpZc9dbWVn+xISGACGAAAwABgAAAwALBYBgIBiABErCAQBYAGhiGACGIBAMAKkSEhgAwAAGAwEMLDAAYAADFFjAQBcjJgSAEAAIYAKwwAAAYMBAAAVIaEiQAMAAYxAAxiQSYA2VOtFcWkYfePETjSk4ScWrcONjjdPa2LeNqVJ1KtSEOkj70+i7Ip20t+Zi9uWFh3j16isr6Wn1nkXXWsney/BmA343s/wANpwcaPTVKuZQTllirWu5W1tqcvwtaUZqtUlKrCm+kVNtJXb4EtqbUji5RnXk4xpyXRpu/VbSy96s7+Ry82d9muWJjcS3DZHpQhUpz9Yw0oVoJySpPNCovsuVrcuJl9s76rD4Pp+htXm+jpUZSzLNa+Ztcktfw53OW1MdKHtYpJpSUFZWUWra+QsPWeMpSlVk3Km7KObSzSat/XIk5Ld/RImOX5dN3B3zrbRnOjVoRUqcVOVWk2oLklKLbs272s+T7DdjnvogwFSlTxE3C1Ks4uMs0Gk4XjZ63u78H2d50M71noyQhgaCABgADEAgGAFSJBFErAIBiABiRIARGcLlG0cYqFKdVxcsqbyxteT7FfQxGwN8MJjVaM+irL3qFZqFRcnblJX7POxJkU72bOSoVavSSTpwnJLirpPkcg2TWq0HGUItqfSRlJLVRbaaffx4necdgFXi4TbUZK0kuafE0Db+4talOPqSi6MrJ552cZtu/iuHxMZK88aaraazuGh7RxNOFOdp0vZT6sFm6SrdNKSfCyu9DFYaTq3nJWpJ21y38exK9ufae1YajDEVKOLhJONoZYtuUaiavw52uuOl+ZvGxtyXjctST6HCq2SKScpKys+y1u4kY4jok3mZ251jsTS9rCm5ZZKKUrvKnzt23s0SwtepGlHSLUdE2utlT91tPgZTb26VTA4qWEm5SVROphatrqpGN7prt4J9mj4OzyO6O7irucsRPocPRcJVYzjOCnF3uoz+i9F5MTj1HRLW3L37i7MxO0lUqLEuiqMqV6dp9HO0cqnZP3uqvhyOzQVklduySu+L72aVQ3p2RgV0eHslZLLQpyldRva8no3q9WzCba9Kc7SWFoZLK7q12pWXdCLtfxYiIr1WbdNS6gBVgpSdKk5++4Qc9LddxTenLUtOqAAGAITGACAYAQRJCiSQCESYgEMRJAYveChKdGok+TOG4ynCUpwmtFKWrV7O7d/1PoPEwvGS7mcB2lRaq1481OVuWq4r4WOeSEljYSq0nJdJUhKNlFwqSjrbSzT+R2r0dbyevYVQqSvicOlCqm1mqR+jU87a96ZxtxzxVOd017knyfY+75Hp3W2zPZ+KjXSdo3jVh9ek2s0fHmu9I5xOpRvWzN1praGIx1Sh6xCdeShHOoyhGUtZtWaaXZp7r5nSItK0VZaXSXYeGjKE3SxFGWaliIKzT6uvXg12cZ+bRbiKdbpYSgqOVLLKc1N1VFtOSjbTWyO7TX95Nk1MdQxFPFwpQ6OUJ4KpRk+mhLLFuV3weZyjyule2tlpm+e21OnTowk5QjFOTfFtaJP4G5b87QjSpxi9XOSk43t1YPNr3XSXmcpxPtI1JPjeKsuFnfgvJIzafQl4qV5RlwvZN939aEMOs9ahBLqupTjrrmvNatefAlVeVZebtmty7vj8jK7jYD1jaOEhbqxmq0vCms935pLzOUz10w77JESbIM9DYAAAAAAAAGgIIkJEgEIGAANCGgJWOIb5YZUcdiYfRk41F4yX7Hb0zkfpPwr6fp465UlNfZ5PyfzMXjoktJqNrS7XxtYjdSvGTWdrLGXnwZ6qcXL3rOK4vlFeP5HnlRg+En95aeZx2y3T0fbzTjQr7NnfpWpPB9vSN6wXen114PuNre8G0KdKLyYfESm1Cm4OSqS+s5QXOKTbWnA5rurTjLH4KTkm6dai7q/WUZJ69+h13dKq6uFhiq0aca9V5pVElByhKd4rNbhZpW5nXHO4ahzDfPFVvWHKVWdWE4QTk4OFNVU5NxgnySt28tTAesZI2u80rNaXy9/idM9K04OhldukhUpTpK2tnGal5aNnJ6NNOTzTabf0la/mS/dJXxhG19W/gdK9EGxmnWx01ZSToUO9XTqSXddRXkzQsHsvEV3koYerVfBuEJSS8ZcEdu3Lw9elgaFHEUlRqUo9HlUoSvFcJPK2rvn3krXrshmWRZJkGdmgACAYAgABiBgJE0VxLAIyREnIiADQhoBuNzG4/YeHrXdSOr0bTs7GQqRcotJuLaaUlZuL7ddDju9+I21g6rjXxdaWHk2qdWChThLsUnBKzJM6G0bR9H+Ds8ld0P5mnFeV0ahtPdGFPSGPwU7cYupkk/JXNcqYutUazTnNt8ZylL8WRWNnJ9HTzTdrJRu3pz8DhMwz37MxsPCuhiqU5NOFOWZzjKLX7nad36ahhqMVoowgl4KKOFww1Wl0UqieSUtWtcttXfv8A0Oz7H2zQdCLjJvKo6aZmrLgr62/ImPNSK80zGnSMdt601v0mYVNSqNtuEFOMeCbjKPF/eZxx9Ine7dno1r+PLwPoPbUaOKShmUlVjWpacVeDlrzT6qOK71bFq4OVKs1aFaMZSsrxztfJ/PyOvNF45qztLVmO6hbex2WzxmKUeCisTVjFeSZ1D0Ub2yxMHgsRUc69KLnSnJ3lUoppNN85Ruteafczk+zsHLEzVOjTlOpJOShFOV7au3NW1Ng3c2PjMNjMLVWGxEJQq07tUalsjklNN24ZW0SGHe2QGxHVoAAAADAABiAojEmVxJogbIsbYgAYhgNFWMwdOvTlSqwjOE1aUZK6LEY7amPcbUab9pNav/Thzl49hzzZa4qTe86iGq1m06hznbe4eGdZxw9arClF+0vllZ/VhLt8b2KHgqdL2FCCpwWtSa1k/GXFt9ptuNkopRXD3UucpPl+bZh8fg5NWi0lxlLt7X5/JH5G/iF+Ivu3SvpH595fWxYK446d2DxbSpVLJWyuKvyT0077N/EymBwLjhMKruNS06qfY020n8Y/iYzFQV4Ra6uZOf8AKn/XwNpunTpv6rrQfdeX7oznyTFKxHvv7PRWOuyq1ck1fqqWl78HzjcNoYWFeg8PVWak1ljfVw7LPii7F0lUpRm+DSzdzWlzx4atKPs6nDk+48eLLkpHNjmYmFmtbdJjb1ejzdWjgKleoqvSzqqEKeeCjOnFXcldaO7y8Le6jeTVMLK1tfBmewOMzPJJ9ZK6f1l+p9/wzxjzbRhzd/Sff+fl8viOF5P3V7PYAAfoXiAAADAQAMQDKKolhVEsIBgAgAYhgQruSi8qu+RhMJs6vec6kbTm7tuUdFyRnxnl4zhK8Vj8u8zEfDpjyTSdw0vFQ/icr1VOLs+Tk+NvL5le04tQbS0ulJ8rvgjaq+y6U5ZnmTvrlaVzG714Z9DTVOPUhPNJJcOq7N+dtT4GfweaXteOlKx09Zl7sXFROonu0jFUlklJ8+qvBGRpVErQfuYmFOrSly6XKm4+ej8ijbWCqypKnSg5SavaPHLa7+K+Z4N1sRPG4KpTmvb4ad4ZZRl1W5Tp2a7OtH7h4ox2yYvMjtvX17ffT12yxW3K2vZrzU5Q8WvH+5m8bsGlVhG3UmoxSklo7LmjV93doxqznSlaNell6ane7jmSaa7U/wBUb3SfUj/LH5Hr8JwROXLgy19p/wA+rycVkmNXpLXKGysRB5XFSX1lJWfx1LJYPEqpCSg7Q4NOOuvibDcD6E+A8Pzc0WtE/wBfhx/W3nvEC4gA+3DxgAABgIAGMiFyiqLLEUxZYmQSYhXABjIkkAxiQANFdennjKD0Uk43XYyYwPJHCQpU55dXkks0rXskc29CU1J45cbrDvXtvVX5nTsWr06i7YTX4M5X6EH7XHJX9yla/HSU/wBTljw0x15aRqFtabTuV+2cPGlvJh3FNdLTTlZ2unGSs0uXVXwR1L+xzTea/wDmHBv/AGYf+p0tG4pWJ5tdTcmIBGkMQAwABDAYCAoYCADzwZYimBYiCYXIgBIZEaAmAkMBgRuMAavp26HKPQxHLiMdHmopW8KjR1dM5b6M4OntXadN6W9Y+Crq3zCMhvZHLtvZ0tEp05R80qj/AEOgReiNG3+p5cbsytyjPJe2mra1/wCRvQUXAEAADYCAYCABgArlDAQ7geWDLEVRZYiCVwEADRIgSuBMZFMYDAQAFzQN3qLpbex0OU6dSV+bUpUqnzkzfzV6WAf+NVK3CPqsLrtcpZV/1/IIN+Ka/gpNJtV4QV+HWlH9DaDF7w4NVqUO2lVoVV92pFv8Lnvw9eFSMZwkpwkrxlF3T8wq0BBcAGRAB3AQANq/z4tfIBAUSAjcAPNEmmVxRZFEE0JjAAGhABJMaZBEkBILiAANbxFeVTalGlT0VGnOtiGr6wy5KUG19upKVvsGxowO7Oz5wqY7E1YuNTFV5uKfFYem3Gl4X1l95AR332i6WHjSg/b4uccPQ7py0zeCumZrAYSFClTow0hSjGnHwirGJ2lsmVfH4OvJJ0MLCvNJvjXm4qOnck35GcbAYhJg2AwuIQErgILgMBDKAYgAosTRBMkiCYyKY2AMQ2RYDTHcgSQEgEADuFxAA7iYAAXATABgK4AAxBl1Tu9OWlmUMAAAC4CuBTFk0VxLEQSRIiiQCYmNiAENCRYkAkgaJWBoogJDYgAGAMBAAgGhiRJAA7DsACEMTAVxXAAKYFqKYMtTIJXC5BsTYE2xXIXEmBdFlsTzxZdECwTC4mURZFsbIgMAQMBCBiAaJorRJATuDZC4ANsTYiNwJXEIAP/Z" height ="220" width="210" />
+       
+        <p class="text"> Estación: Otoño</p>
+        
+        <p class="text"> Tipo: Cognitivo</p>
+
+        <p class="text"> ¿Cómo se juega?</p><p class="description">Recoged hojas de árbol de colores cuando vayáis de paseo. Cuando lleguéis a casa coged un folio y dibujad
+            una muñeca. Escoged las hojas que más os gusten y pegadlas a modo de falda, vestido, camiseta, sombrero... ¡Que vuele la creatividad!
+        </p>
+    
+ 
+    </a>
+
+        <a class="pruebajuego"><p class="text" >Mandalas</p><img src="https://img.pikbest.com/png-images/20211220/luxury-png-mandala-background_6194090.png!bw700" height ="220" width="210" />
+       
+        <p class="text"> Estación: Invierno</p>
+        
+        <p class="text"> Tipo: Creativo</p>
+
+        <p class="text"> ¿Cómo se juega?</p><p class="description">Juego perfecto para los días lluviosos. Necesitaremos un compás y a un adulto que nos supervise. Con el compás, trazaremos un gran círculo en nuestro folio.
+            Luego dibujaremos otros círculos concéntricos más pequeños. Ahora, con nuestro lápiz dibujaremos las figuras que más nos gusten en las zonas
+            vacías entre los círculos, corazones, figuras, animalitos... Para terminar, llenaremos de color y el resultado será... ¡Un mandala totalmente 
+            personal!
+        </p>
+    
+ 
+    </a>
+</div>
+

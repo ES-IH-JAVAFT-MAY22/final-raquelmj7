@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    grid: 10px;
+    text-align: center;
+}
+
+.pruebajuego{
+    border-radius:7%;
+    padding: 15px;
+    margin-top: 50px;
+    margin: 15px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(235, 249, 249);
+}
+
+.btn{
+    border-radius:15%;
+    padding: 15px;
+    margin-top: 50px;
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(235, 249, 249);
+}
+
+.btnallgames{
+    border-radius:15%;
+    padding: 15px;
+    margin-top: 30px;
+    margin: 50px;
+    margin-left: 100px;
+    background-color: rgb(235, 249, 249);
+}
+
+.text{
+    font-size: large;
+    font-weight: bold;
+}
+
+li {
+    margin-right: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.active {
+    background-color: rgb(179, 0, 255);
+    padding: 8px;
+    border-radius: 50%;
+}

@@ -1,0 +1,20 @@
+<div>
+    <ul>
+        <li>
+            <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow1 ? {'background-color': color1, 'color': backgroundColor1, 'padding': padding1, 'border-radius': border1}:{'background-color': backgroundColor1, 
+            'color': color1, 'padding': padding1, 'border-radius': border1}" (mouseover)="shadow1=true" (mouseleave)="shadow1=false">Home</a>
+        </li>
+        <li>
+            <a routerLink="/games" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow2 ? {'background-color': color2, 'color': backgroundColor2, 'padding': padding2, 'border-radius': border2}:{'background-color': backgroundColor2, 
+            'color': color2, 'padding': padding2, 'border-radius': border2}" (mouseover)="shadow2=true" (mouseleave)="shadow2=false">Games</a>
+        </li>
+        <li>
+            <a routerLink="/mycollection" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow3 ? {'background-color': color3, 'color': backgroundColor3, 'padding': padding3, 'border-radius': border3}:{'background-color': backgroundColor3, 
+            'color': color3, 'padding': padding3, 'border-radius': border3}" (mouseover)="shadow3=true" (mouseleave)="shadow3=false">My collection</a>
+        </li>
+        <li>
+            <a class="logout" routerLink="/contacts" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [ngStyle]="shadow5 ? {'background-color': color5, 'color': backgroundColor5, 'padding': padding5, 'border-radius': border5}:{'background-color': backgroundColor5, 
+            'color': color5, 'padding': padding5, 'border-radius': border5}" (mouseover)="shadow5=true" (mouseleave)="shadow5=false" (click)="logout()">Logout</a>
+        </li>
+    </ul>
+</div>

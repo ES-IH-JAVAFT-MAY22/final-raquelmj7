@@ -1,0 +1,20 @@
+<div class="spring">
+    <div *ngFor="let game of springGames, let i=index" >
+        
+        <div (mouseover)="highlight(game)" (mouseout)="highlight(null)" class="games-component" [class.has-background-grey-lighter]="game===highlighted">
+
+        <div class="game_name">
+        {{game.name}}
+    </div>
+
+    <img class="game_image" [src]="game.image" alt="Photo of {{game.name}}">
+
+    <div class="game_filter">
+        <ul>
+            <a><b>Estación</b>: {{game.season}}</a><br><br>
+            <a><b>Tipo</b>: {{game.type}}</a> <br><br>
+            <a><b>¿Cómo se juega?</b> {{game.description}}</a>
+
+        </ul>
+    </div>
+</div>

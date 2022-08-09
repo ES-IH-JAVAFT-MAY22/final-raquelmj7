@@ -1,0 +1,18 @@
+<div (mouseover)="highlight(games)" (mouseout)="highlight(null)"
+    class="games-component" [class.has-background-grey-lighter]="games===highlighted">
+
+    <div class="game_name">
+        {{games.name}}
+    </div>
+
+    <img class="game_image" [src]="games.image" alt="Photo of {{games.name}}">
+
+    <div class="game_filter">
+        <ul>
+            <a><b>Estación</b>: {{games.season}}</a><br><br>
+            <a><b>Tipo</b>: {{games.type}}</a> <br><br>
+            <a><b>¿Cómo se juega?</b> {{games.description}}</a>
+
+        </ul>
+    </div>
+</div>
